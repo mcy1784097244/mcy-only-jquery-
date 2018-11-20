@@ -1,0 +1,63 @@
+    header{
+	  width:100%;
+	}
+   /* 搜索栏 */ 
+    ul{
+		    margin:0;
+			padding:0;
+			list-style:none;
+		}
+	#search a{
+		  text-decoration:none;
+           color:black;
+		}
+     #search{
+         width:1200px;
+		 margin:0 auto;
+         display:flex;
+		 justify-content:space-between;
+     }
+	 .header-left a{
+	   margin-left:20px;
+	 }
+	 .header-left a img{
+	   margin-left:50px;
+	   height:80px;
+	 }
+     .header-center{
+	   margin-top:20px;
+	   position:relative;
+	   margin-right:60px;
+	 }
+     .header-center input{
+	     width:300px;
+		 height:40px;
+         border:1px solid black;
+         border-radius: 40px;
+		 outline:none;
+		 position:absolute;
+		 left:0;
+		 top:0;
+         padding-left:10px;
+		 
+     }
+     .header-center img{
+	     position:absolute;
+         left:274px;
+         top:11px;
+     }
+	 .header-right{
+		 font-size:18px;
+	     font-family:"微软雅黑";
+		 text-align:center;
+		 line-height:84px;
+	 }
+	 .header-right ul{
+         display:flex;
+     }
+	.login1{ 
+	    display:block;
+	  	 }
+	  	 .login2{
+	    display:none;
+	  	 }

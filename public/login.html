@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>登录</title>
+  <link rel="stylesheet" href="css/login.css">
+ </head>
+ <body>
+    <div class="login">
+	    <video src="img/shiping.mp4" autoplay loop muted>   
+		   您的浏览器版本过低，请升级 ！！！
+		</video>
+		<div class="logining">
+		    <h3>登录</h3>
+			<div class="err" id="haserr">
+			   <div class="login-error"><b></b>账户名与密码不匹配，请重新输入</div>
+			</div>
+			<form>
+			   <div class="form-uname">
+			        <label for="loginname"></label>
+			        <input type="text" id="loginname" placeholder="请输入您的用户名" class="uname" name="uname">
+			   </div>
+			   <div class="form-upwd">
+			        <label for="loginupwd"></label>
+			        <input type="password" id="loginupwd" placeholder="请输入您的密码" class="upwd" name="upwd">
+               </div>
+			   <div class="form-forget">
+			       <input type="checkbox" id="autologin" checked><span>记住用户名密码</span>
+			       <a href="#">忘记密码</a>
+			   </div>
+			   <div class="form-button"  id="sub"><a href="#">登录</a></div>
+			</form>
+			
+			<div class="login-last">
+			    <ul>
+				    <li></li>
+			    	<li><a href="#">&nbsp;QQ&nbsp;&nbsp;|&nbsp;&nbsp;</a></li>
+					<li></li>
+					<li><a href="#">&nbsp;微信</a></li>
+					<li><a href="register.html">立即注册</a></li>
+			    </ul>
+			</div>
+			      
+		</div>
+	</div>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+	<script src="js/login.js"></script>
+ </body>
+</html>

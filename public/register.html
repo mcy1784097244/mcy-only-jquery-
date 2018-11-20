@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>注册</title>
+	<style>
+	    *{
+		 padding:0;
+		 margin:0;
+		 color:white;
+		}
+		body{
+			 background:url("img/look11-look11.st.jpg")  no-repeat center center;
+			 background-size:cover;
+			background-attachment: fixed;
+			width: 100%;
+			height: 100%;
+			position: fixed;
+		}
+        .content{
+		 margin:0 auto;
+		 
+		}
+	    form{
+		    width:100%;
+			margin-top:10%;
+	        margin-left:40%;
+	    }
+	    div{
+		   padding: 5px 0;
+	    }
+	    label{
+			display: inline-block;
+			width: 100px;
+			margin-right: 40px;
+			text-align: right;
+			/* color:white; */
+	    }
+	    span{
+			color:red;
+			font-size:18px;
+	    }
+	    .inputText{
+			display: inline-block;
+			width: 300px;
+			height:40px;
+			margin-right: 20px;
+			border-radius:20px;
+			padding-left:20px;
+			outline:none;
+			background:transparent;
+	    }
+		.inputText{
+		   color:white;
+		}
+		.btn{
+		   background:#0096e6;
+	       border:none;
+		   border-radius:5px;
+		   width:80px;
+		   height:40px;
+		   outline:none;
+           margin-left:200px;
+		   margin-top:30px;
+		             
+		}
+		.btn a{
+		   text-decoration:none;
+		  
+		}
+
+
+	</style>
+<script src="js/jquery-1.11.3.js"></script>
+	<script src="js/register.js"></script>
+
+ </head>
+ <body>
+    <div class="content">
+	    <form method="" action="" name="frm">
+			<div>
+				<label>用户名</label>
+				<input type="text" id="username" class="inputText" placeholder="请输入您的用户名"  />
+				<span id="span1">*
+				</span>
+			</div>
+	        <div>
+				<label>密码</label>
+				<input type="password" id="password" class="inputText" placeholder="请输入您的密码"/>
+				<span id="span2">*
+				</span>
+			</div>
+			<div>
+				<label>确认密码</label>
+				<input type="password" id="confirmPassword" class="inputText" placeholder="请确认您的密码"/>
+				<span id="span3">*
+				</span>
+	        </div>
+			<div>
+				<label>性别</label>
+				<input type="radio"  name="gender" value="male"/>男
+				<input type="radio"  name="gender" value="female" />女
+			</div>
+			<div>
+				<label>联系电话</label>
+				<input type="text" id="phone" class="inputText" placeholder="请输入您的联系电话" />
+				<span id="span5">*
+				</span>
+			</div>
+			<div>
+				<label>电子邮箱</label>
+				<input type="email" id="email" class="inputText" placeholder="请输入您的电子邮箱" />
+				<span id="span6">*
+				</span>
+			</div>
+			<div id="all">
+				</button><input class="btn" type="button" value="注册"/>
+			</div>
+	    </form>
+    </div>
+ </body>
+</html>
+

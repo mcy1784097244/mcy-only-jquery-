@@ -1,0 +1,446 @@
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #F3F3F3;
+    font-size: 14px;
+    font-family: 'Microsoft YaHei', 'Times New Roman', Times, serif;
+    color: #333333;
+}
+*{
+	padding:0;
+	margin:0;
+	}
+ul,li{
+	list-style:none;
+  }
+    /* 头部 */
+	 #header{
+		width:100%; 
+		height:100px;
+	 } 
+   /* 尾部 */
+	 .my_footer{
+		width:100%; 
+		height:280px;
+	 } 
+   /* 导航 */
+	.hl_nav{      
+		background-color:#363636;
+		position: relative;
+		color: #ffffff;		
+		margin:0 auto;
+		height: 64px;
+	}
+	.hl_nav a{
+		display: block;
+		text-decoration: none;
+	}
+	.hl_nav .nav_list{
+		position: absolute;
+		top: 0;
+		left: 50%;
+		margin: 0 0 0 -600px;
+		z-index: 4;
+		padding: 0;
+		list-style: none;
+		overflow: hidden;
+		height: 64px;
+	}
+	.hl_nav .nav_list>li{
+		padding: 0;
+		float: left;
+		margin: 0;
+		width: 120px;
+		text-align: center;
+		height: 264px;
+	}
+	.hl_nav .nav_head{
+		height: 64px;
+		line-height: 64px;
+		color: #ffffff;
+		font-size: 16px;
+		background-color:#363636;
+	}
+	.hl_nav .nav_head .icon{
+		font-size: 18px;
+	}
+	.hl_nav .item{
+		height: 40px;
+		line-height: 40px;
+		color: #333333;
+		position: relative;
+	}
+	.hl_nav .item:hover:after{
+		content: '';
+		display: block;
+		position: absolute;
+		width: 60px;
+		height: 2px;
+		bottom: 5px;
+		left: 30px;
+		background-color: black;
+	}
+	.hl_nav .nav_list:hover{
+		height: 264px;
+
+	}
+	.hl_nav .nav_list>li.highlight:hover{
+		background-color:#ffffff;
+	}
+	.hl_nav .nav_list>li:hover .nav_head,.hl_nav .nav_list>li.active .nav_head{
+		background-color: black;
+	}
+  /* 导航结束 */
+  /* 左边导航栏 */
+   ul.navbar{
+      	   position:fixed;
+		   top:300px;
+		   z-index:20;
+		   display:none;
+	}
+	  ul.navbar li{
+	    border:1px solid black;
+		width:80px;
+		height:40px;
+		border-radius:10px;
+		background: #ffcc33;
+		color:black;
+		/* margin-top:20px; */
+		margin-bottom:10px;
+		text-align:center;
+		line-height:40px;
+		cursor:pointer;
+	  }
+	  ul.navbar li.active{
+	    background: #5f5f5f;
+		color:white;
+	  }
+  
+  /* 广告弹出 */
+    .advent .close{
+	   float:right;
+		display:inline-block;
+		color:white;;
+		background: black;
+	   width:30px;
+	   height:30px;
+	   line-height:30px;
+	   text-align:center;
+	   font-size:20px;
+	   cursor:pointer;
+	   opacity:.5
+	   font-weight:bold;
+	   z-index:101;
+	}
+	.advent .close:hover{
+	   opacity:1;
+	}
+	.advent img{
+	   z-index:100;
+	   display:inline-block;
+	}
+	.fade{
+	   width:658px;
+	   height:343px;
+	   position:fixed;
+	   opacity:0;
+	   overflow:hidden;
+	   top:99%;
+	   left:68%;
+	   transition:all .5s linear;
+	   z-index:100;
+	}
+	.in{
+	   width:658px;
+	   height:343px;
+	   position:fixed;
+	   opacity:1;
+	   top:60%;
+	   left:65%;
+	}
+
+ /*轮播*/
+		.lunbo_contaner{
+			width:1200px;  
+			height:445px;
+			margin:0 auto;
+			overflow:hidden;
+			margin-top:20px;
+			position:relative;
+		}
+		.lunbo_contaner>.lunbo_count{
+		   width:1200px;
+		   height:445px;
+		}
+		.lunbo_contaner>.lunbo_count img{
+		   position:absolute; top:0; left:0;
+		    opacity:0;
+            transition:all 1s linear;
+		}
+		.lunbo_contaner>.lunbo_count img.show{ 
+		     opacity:1;  
+		}
+        .lunbo_contaner>a.left,a.right{
+		   width:50px;
+		   height:50px;
+		   border-radius:50%;
+		   border:3px solid black;
+		   font-size:25px;
+		   font-weight:bold;
+		   color:black;
+		   text-align:center;
+		   line-height:50px;
+		   position:absolute;
+		   opacity:0;
+		   z-index:10;
+		   top:222px;
+		}
+		.lunbo_contaner>a.right{right:0;}
+        .lunbo_contaner:hover a{
+		  opacity:1;
+		}
+        .lunbo_button{
+		position:absolute;
+		  display:flex;
+		   right:20px;
+		   top:350px;
+		}
+		.lunbo_button>li{
+		  width:10px;
+		   height:10px;
+		   border-radius:50%;
+		   border:3px solid black;
+		   z-index:20;
+		   margin-right:10px;
+		}
+		ul.lunbo_button li.active{
+		  background:black;
+		}
+
+ /*轮播结束*/
+ 
+ /*楼层*/
+	  .lou{
+		width:1200px;  
+		margin:0 auto;
+		overflow:hidden;
+		margin-top:20px;
+		position:relative;
+	  }
+	  /*1f */
+		 a{
+		  text-decoration:none;
+		  color:white;
+		 }
+		 .lou .container_three{
+			width:1200px;
+			height:586px;
+			margin:0 auto;
+			display:flex;
+			margin-top: 50px;
+		 }
+		 .lou .container_three .three_left{
+		   width:219px;
+		   background: #595959;
+		 }
+		 .container_three .three_right{
+		   width:974px;
+		 }
+	   /* 上半边 */
+		 .container_three .three_left ul{
+		   padding-top: 60px;
+		   padding-bottom: 60px;
+		 }
+		 .container_three .three_left ul li{
+		   background: #737373;
+		   height: 90px;
+		   margin-bottom: 30px;
+		   cursor: pointer;
+		   text-align:center;
+		   line-height:90px;
+		   font-size:20px;
+		 }
+		 .container_three .three_left ul li.active{
+		   background: #fcd217;
+		 }
+	   /* 下半部分 */
+		 #outwears{
+			width:100%;
+		  }
+		 .container_three .three_right ul{
+		   display:flex;
+		   flex-wrap:wrap;
+		   justify-content:space-around;
+		 }
+		 #outwears ul li:first-child img,#dresses ul li:first-child img,#tees ul li:first-child img,#pants ul li:first-child img{
+		   width:480px;
+		   height:278px;
+		 }
+		 div.three_right ul li{
+		   padding-bottom:10px;
+		 }
+		 div.three_right ul li span{
+		   display:block;
+		   text-align:center;
+		   cursor: pointer;
+		   padding-bottom:10px;
+		 }
+		 div.three_right ul li button{
+		   border-radius:5px;
+		   height:40px;
+		   width:80px;
+		   outline:none;
+		   border:0;
+		   background:rgba(235,235,235,.8);
+		   margin-left:25px;
+		   cursor: pointer;
+		 }
+		 div.three_right ul li button a{
+		   color:black;
+		 }
+		 div.three_right ul li span{
+		   display:block;
+		 }
+		 div.three_right ul li img{
+		   width:240px;
+		   height:268px;
+		 }
+		 div.three_right ul li:not(:first-child){
+		   position:relative;
+		   overflow:hidden;
+		 }
+		 div.three_right ul li div.three_mask{
+		  position:absolute;
+		  width:240px;
+		  height:268px;
+		  top:265px;
+		  transition:all 1s linear;
+		}
+		div.three_right ul li:not(:first-child):hover div.three_mask{
+		  top:180px;	  
+		}
+		 div.three_right ul li img:hover{
+		   box-shadow:0 0 8px #330033;
+		 }
+		 .container_three .three_right .box{
+		   display:none;
+		 }
+		 .container_three .three_right .active{
+		   display:block;
+		 }
+	 /*2F*/
+		  .louceng_ul{        
+			display: flex;       
+			justify-content:space-around;
+		  }
+		  .louceng_counter1{
+			  margin-top:50px;	  
+			  justify-content:space-around;
+		  }
+		  div.louceng_counter1 a{
+			  text-decoration: none;
+			  color:black;
+			  font-size: 25px;
+			  font-weight: bold;        
+		  }
+		  div.louceng_counter1 div{
+			  padding-top:15px;
+			  padding-bottom: 35px;
+			  text-align: center;
+		  }
+		  /*动画*/
+		  .box{
+		   position:relative;
+		   overflow:hidden;
+		 }
+		 .box:hover .mask{
+		   left:200px;
+		   transition:all 0.8s linear;
+		  }
+		  .mask{
+			  /*border: 1px solid black;*/
+			  width:91px;
+			  height:280px;
+			  transform:skewX(-25deg);
+			  position:absolute;
+			  left:-120px;
+			  top:0px;
+			  background:linear-gradient(to right,rgba(256,256,256,0)0%,rgba(256,256,256,0.3)50%,rgba(256,256,256,0)100%);	    
+		  }	  
+	 /*3f*/
+		a,img{border:0;}
+		body{
+		  background:white;
+		}
+		.main{
+		  display:flex;
+		  width:1200px;
+		  overflow:hidden;
+		  padding-top:100px;
+		  margin-bottom:50px;
+		}
+		/* product */
+		.product{
+		  width:150px;
+		  padding:15px;
+		  position:relative;
+		}
+		.main ul{
+		  display:flex;
+		}
+		.main div{
+		  height:500px;
+		}
+		.main div a img{
+		  width:300px;
+		  margin-top:100px;
+		  
+		}
+		.product img{
+		  display:block;
+		  position:relative;
+		  cursor:pointer;
+
+		}
+		
+		.product:hover .product-hover, .product:active .product-hover{opacity:1;}
+		.product-hover{
+			position:absolute;
+			top:0;
+			left:0;
+			right:0;
+			bottom:0;
+			opacity:0;
+			transition:opacity 0.3s ease;
+			background-size:30px 30px;
+			background-image:linear-gradient(45deg, rgba(234, 176, 176, 1) 25%, transparent 25%, transparent 50%, rgba(234, 176, 176, 1) 50%, rgba(234, 176, 176, 1) 75%, transparent 75%, transparent);
+			animation:barberpole 0.5s linear infinite;
+		}
+
+		@keyframes barberpole{
+			from{
+				background-position:0 0;
+			}
+			to{
+				background-position:60px 30px;
+			}
+		}
+     
+/*楼层结束*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,36 @@
+   *{
+     margin:0;
+	 padding:0;
+   }
+   ul li{
+      list-style: none;
+    }
+    footer{
+	  background:black;
+      color:white;
+	  width:100%;
+	  margin:0 auto;
+	}
+    div.footer1{
+	  display:flex;
+	  left:-16px;
+	  justify-content:space-around;
+	  padding-bottom:20px;
+	}
+	div.footer1 ul li{
+	  padding-top:20px;
+	}
+	.footer1 a{
+	  text-decoration:none;
+      color:white;
+	  
+	}
+	footer p{
+	  margin-top:10px;
+	  text-align:center;
+	}
+	#fooer_count{
+	  width:1200px;
+	  margin:0 auto;
+	  padding:20px;
+	}
