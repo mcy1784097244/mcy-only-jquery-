@@ -83,7 +83,34 @@ $(function(){
 					n--
 				}
 			    $span.html(n);
-			}
+			}else{
+				(async function(){
+					var res=await $.ajax({  //同步先判断是否登录
+                        url:"http://127.0.0.1:3000/users/islogin",
+						type:"get",
+						dataType:"json"
+					})
+					//console.log(res)
+					if(res.ok==0){
+						alert("请先登录")
+					}else{  //登录了
+						var count=$btn.siblings(".span1").html();//产品页的点击时当前产品的数量
+						var lid=$btn.attr("data-lid");  //拓展属性提前保存用户id
+						console.log(count,lid)
+						var res=await $.ajax({
+							url:"http://127.0.0.1:3000/cart/add",
+							type:"get",
+							data:{lid,count}
+						})
+						$btn.siblings("input").val(1);//东西加入购物车之后自动清除为默认值1
+						alert("添加成功");
+						location.reload();
+					}
+						
+						
+				})()
+			}//else的括号
+
 		})
 
 
