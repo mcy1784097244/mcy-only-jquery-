@@ -8,8 +8,9 @@ const session = require('express-session');
 const index=require("./routes/index.js");
 const product=require("./routes/product.js");
 const details=require("./routes/details.js")
-const users=require("./routes/users.js")
-const register=require("./routes/register.js")
+const users=require("./routes/users.js");
+const register=require("./routes/register.js");
+const cart=require("./routes/cart.js");
 
 //2.创建express对象
 var app = express();
@@ -34,3 +35,4 @@ app.use("/product",product);
 app.use("/details",details)
 app.use("/users",users)
 app.use("/register",register)
+app.use("/cart",cart)
