@@ -48,6 +48,7 @@ $(function(){
 			   $("#signout").hide();
 		   }
 		   $("#btnSignout").click(function(){
+				$("#signin").hide();
 		        $.ajax({
 					url:"http://127.0.0.1:3000/users/signout",
 					type:"get",
